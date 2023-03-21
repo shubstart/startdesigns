@@ -1,0 +1,65 @@
+.TurstedSoftware{
+    display: flex;
+    width: 100%;
+    background: #122453;
+    &_innerone{
+        padding-top: 60px;
+        padding-left: 120px;
+        padding-bottom: 67px;
+        max-width: calc(100% - 539px);
+        width: 100%;
+        h1{
+            color: #fff;
+            padding-bottom: 25px;
+        }
+        p{
+            width: 726px;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        &_flexbox{
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 0;
+                width: 84px;
+                height: 93px;
+                background: #1E2F5C;
+                z-index: 1;
+            }
+            &_inner{
+                max-width: calc(100% - 539px - 25px);
+                width: 100%;
+                padding: 15px 37px;
+                z-index: 2;
+                h1{
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 35px;
+                    color: rgba(255, 255, 255, 0.84);    
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 10px;            
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &_innertwo{
+        padding-top: 60px;
+        background: #1E2F5C;
+    }
+}

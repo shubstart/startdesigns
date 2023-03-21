@@ -1,0 +1,79 @@
+.Maintab{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    .flex_column{
+        flex-direction: column;
+        background-color: rgba(114, 156, 239, 0.18);
+        padding: 39px 33px;
+        padding-right: 0;
+        height: 100%;
+        &_item{
+            &_link{
+                &_tabflex{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    &_innerone{
+                        max-width: 44px;
+                        width: 100%;
+                        height: 44px;
+                        background-color: #fff;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                    &_innertwo{
+                        h6{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: rgba(0, 0, 0, 0.84);
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_Content{
+        padding: 55px 80px 50px 60px;
+        &_head{
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 35px;
+            color: #122453;
+            margin-bottom: 30px;
+        }
+        &_list{
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            &_flex{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                h5{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: rgba(0, 0, 0, 0.84);
+                    margin: 0;
+                }
+                img{
+                    vertical-align: sub;
+                }
+            }
+        }
+        &_ReadMore{
+            display: block;
+            a{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                color: #ED0F66;
+            }
+        }
+    }
+}

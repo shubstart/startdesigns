@@ -1,0 +1,40 @@
+.GetProposal{
+    padding: 0 120px 95px 80px;
+    background: #1E2F5C;
+    max-width: 539px;
+    width: 100%;
+    h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        color: #FFFFFF;
+        margin-bottom: 23px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.84);
+        margin-bottom: 50px;
+    }
+    &_form{
+        input{
+            width: 349px;
+            height: 60px;
+            background: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            border-radius: 4px;
+            padding: 18px 15px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: rgba(19, 19, 19, 0.82);
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.padTop_120{
+    padding-top: 120px;
+}

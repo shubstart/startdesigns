@@ -1,0 +1,86 @@
+.About{
+    position: relative;
+    background: #122453;
+    &_content{
+        &_flex{
+            display: flex;
+            &_area{
+                padding-top: 120px;
+                padding-left: 120px;
+                padding-bottom: 95px;
+                max-width: calc(100% - 539px);
+                width: 100%;
+                &_data{
+                    margin-bottom: 60px;
+                    h1{
+                        font-weight: 700;
+                        font-size: 40px;
+                        line-height: 50px;
+                        color: #FFFFFF;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: rgba(255, 255, 255, 0.84);
+                        margin-bottom: 27px;
+                        max-width: 704px;
+                        width: 100%;
+                    }
+                    a{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 23px;
+                        text-align: center;
+                        color: #DFDFDF;
+        
+                    }
+                }
+                &_rating{
+                    display: flex;
+                    &_box{
+                        padding: 2px 35px;
+                        border-right: 1px solid #D9D9D9;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                            border-right: 0;
+                        }
+                        h6{
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 23px;
+                            color: rgba(255, 255, 255, 0.84);   
+                            margin-bottom: 5px;                     
+                        }
+                        &_rate{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            span{
+                                font-weight: 700;
+                                font-size: 30px;
+                                line-height: 38px;
+                                color: #FDCE35;
+                            }
+                            img{
+                                width: 100%;
+                                max-width: 140px;
+                                height: 28px;
+                            }
+                        }
+                        small{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: rgba(255, 255, 255, 0.84);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

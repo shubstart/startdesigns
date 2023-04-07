@@ -53,6 +53,8 @@ a{
   border-radius: 10px;
 }
 
+/* ServiceWeOffer Tab Css Start */
+
 .Maintab .nav-pills .nav-link{
   position: relative;
 }
@@ -66,7 +68,7 @@ a{
   width: 0;
   border-radius: 0 5px 5px 0;
   background-color: #ED0F66;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 
 .Maintab .nav-pills .nav-link.active{
@@ -90,3 +92,107 @@ a{
   background-color: #ED0F66;
   background-position: center;
 }
+
+/* ServiceWeOffer Tab Css End */
+
+/* TurstedSoftware Component Carousal Css Start */
+
+.industries_carousal .owl-nav {
+  width: fit-content;
+  position: absolute;
+  top: -100px;
+  right: 120px;
+}
+
+.industries_carousal .owl-nav button:hover{
+  background: transparent !important;
+}
+
+.owl-theme .owl-nav .disabled span{
+  background: #FCFCFC;
+}
+
+.industries_carousal .owl-nav button span{
+  width: 58px;
+  height: 58px;
+  background: rgba(114, 156, 239, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+
+.industries_carousal .owl-nav button span::after{
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 35px;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.industries_carousal .owl-nav .owl-prev span.prev::after{
+  background-image: url(./assets/images/carousalleftarrow.svg);
+}
+
+.industries_carousal .owl-nav .owl-next span.next::after{
+  background-image: url(./assets/images/carousalrightarrow.svg);
+}
+
+/* TurstedSoftware Component Carousal Css End */
+
+
+/* ClientSay Start */
+
+.clientsay_carousal .owl-nav{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 100px !important;
+  margin-left: 20px;
+}
+
+.clientsay_carousal .owl-nav button{
+  margin: 0 !important;
+}
+
+.clientsay_carousal .owl-nav button:hover{
+  background: transparent !important;
+}
+
+.clientsay_carousal .owl-nav button span{
+  width: 66px;
+  height: 66px;
+  border-radius: 50% !important;
+  display: block;
+  position: relative;
+}
+
+.clientsay_carousal .owl-nav button span::after{
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 35px;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clientsay_carousal .owl-nav .owl-prev span.prev::after{
+  background-image: url(./assets/images/carousalleftarrow.svg);
+}
+
+.clientsay_carousal .owl-nav .owl-next span.next::after{
+  background-image: url(./assets/images/carousalrightarrow.svg);
+}
+
+/* ClientSay End */

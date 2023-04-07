@@ -1,0 +1,102 @@
+.ClientSay{
+    padding: 110px 0;
+    background-color: #fcfcfc;
+    &_flexbox{
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        &_innerone{
+            width: calc(40% - 40px);
+            &_imagebox{
+                width: 100%;
+                margin-bottom: 30px;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                color: #000000;
+                margin-bottom: 9px;
+            }
+            h2{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 35px;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            small{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+            }
+        }
+        &_innertwo{
+            width: calc(60% - 40px);
+            h1{
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                color: #000000;
+            }
+            &_carousalitem{
+                position: relative;
+                padding-top: 50px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -15px;
+                    left: 0;
+                    background-image: url(../../assets/images/doubleinverted.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 135px;
+                    height: 135px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 15px;
+                    right: 0;
+                    background-image: url(../../assets/images/doubleinvertedreverse.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 135px;
+                    height: 135px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;                    
+                    color: rgba(0, 0, 0, 0.84);
+                    margin-bottom: 50px;
+                }
+                &_detailname{
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 200px;
+                    margin-left: auto;
+                    small{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #060606;
+                    }
+                    h6{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #060606;    
+                        margin: 0;                    
+                    }
+                }
+            }
+        }
+    }
+}

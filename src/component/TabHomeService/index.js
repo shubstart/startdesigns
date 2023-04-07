@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import {Col,Nav,Row,Tab} from 'react-bootstrap';
 import Styles from './TabHomeService.module.scss';
 import HomeIcon from '../../assets/images/homeicon.svg';
@@ -10,8 +11,38 @@ import Marketing from '../../assets/images/marketing.svg';
 import GraphicDesignServices from '../../assets/images/graphicdesignservice.svg';
 import PaymentGateway from '../../assets/images/paymentgatewayintergration.svg';
 
+import $ from 'jquery';
 
 function LeftTabs() {
+  useEffect(() => {
+    $(document).ready(function() {
+      var container = $('.Maintab');
+      var tabs = container.find('.nav-link');
+      var activeTabIndex = 0;
+      var debounceTimer = null;
+    
+      container.on('wheel', function(event) {
+        event.preventDefault();
+        if (debounceTimer) {
+          clearTimeout(debounceTimer);
+        }
+    
+        debounceTimer = setTimeout(function() {
+          if (event.originalEvent.deltaY > 0) {
+            activeTabIndex = (activeTabIndex + 1) % tabs.length;
+          } else {
+            activeTabIndex = (activeTabIndex + tabs.length - 1) % tabs.length;
+          }
+    
+          tabs.removeClass('active');
+          tabs.eq(activeTabIndex).addClass('active');
+          var id = tabs.eq(activeTabIndex).attr('aria-controls');
+          $('#' + id).addClass('active show').siblings().removeClass('active show');
+          debounceTimer = null;
+        }, 100);
+      });
+    });                     
+  }, []);
   return (
     <div className={`${Styles.Maintab} Maintab`}>
       <Tab.Container id="left-tabs" defaultActiveKey="first">

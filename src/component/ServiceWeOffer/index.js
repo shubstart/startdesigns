@@ -1,18 +1,18 @@
 import React from 'react';
 import Styles from './ServiceWeOffer.module.scss';
-import LeftTabs from '../TabHomeService';
+import TabHomeService from '../TabHomeService';
 
-const index = () => {
+const Index = () => {
   return (
     <div className={`${Styles.ServiceWeOffer}`}>
         <div className='container'>
             <h1 className='head-line'>Services We Offer</h1>
             <div className={Styles.tabbox}>
-                <LeftTabs />
+                <TabHomeService />
             </div>
         </div>
     </div>
   )
 }
 
-export default index
+export default Index;

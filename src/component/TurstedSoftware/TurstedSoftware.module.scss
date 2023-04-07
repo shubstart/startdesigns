@@ -4,13 +4,16 @@
     background: #122453;
     &_innerone{
         padding-top: 60px;
-        padding-left: 120px;
+        padding-left: 132px;
         padding-bottom: 67px;
         max-width: calc(100% - 539px);
         width: 100%;
         h1{
-            color: #fff;
             padding-bottom: 25px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            color: #FFFFFF;
         }
         p{
             width: 726px;
@@ -35,7 +38,7 @@
                 z-index: 1;
             }
             &_inner{
-                max-width: calc(100% - 539px - 25px);
+                max-width: calc(100% - 539px);
                 width: 100%;
                 padding: 15px 37px;
                 z-index: 2;

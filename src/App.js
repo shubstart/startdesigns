@@ -5,6 +5,7 @@ import AboutStartDesigns from './component/AboutStartDesigns';
 import ServiceWeOffer from './component/ServiceWeOffer';
 import IndustriesWeServe from './component/IndustriesWeServe';
 import TurstedSoftware from './component/TurstedSoftware';
+import ClientSay from './component/ClientSay';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ServiceWeOffer />
       <IndustriesWeServe />
       <TurstedSoftware />
+      <ClientSay />
     </>
   );
 }

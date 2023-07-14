@@ -36,6 +36,28 @@ a{
   padding: 120px 0;
 }
 
+.btn.btn-primary{
+  background: #ED0F66;
+    border: 2px solid #ED0F66;
+    box-shadow: 0px 2px 4px rgba(23, 66, 87, 0.3);
+    border-radius: 4px;
+    width: 164px;
+    height: 46px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all 0.2s linear;
+}
+
+.btn.btn-primary:hover{
+    background: #c80553;
+    border-color: #c80553;
+}
+
 .head-line{
   position: relative;
   padding-bottom: 10px;

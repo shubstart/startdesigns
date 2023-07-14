@@ -6,6 +6,7 @@ import ServiceWeOffer from './component/ServiceWeOffer';
 import IndustriesWeServe from './component/IndustriesWeServe';
 import TurstedSoftware from './component/TurstedSoftware';
 import ClientSay from './component/ClientSay';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <IndustriesWeServe />
       <TurstedSoftware />
       <ClientSay />
+      <Footer />
     </>
   );
 }

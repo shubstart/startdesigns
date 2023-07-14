@@ -3,7 +3,6 @@ import Styles from './GetProposal.module.scss';
 import Button from '../common/Button';
 
 const index = ({padd}) => {
-  console.log('padd', padd)
   return (
     <div className={!padd ?`${Styles.padTop_120} ${Styles.GetProposal}`:Styles.GetProposal}>
         <h1>Get your free proposal today:</h1>
